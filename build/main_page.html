@@ -11,6 +11,36 @@
   <script src="js/app.js"></script>
 </head>
 <body>
+  <header class="header">
+    <div class="header__wrap container">
+      <div class="header__left">
+        <div class="logo">
+          <a href="main_page.html" class="logo__link" title="romsmode">
+            <img src="img/logo.png" alt="romsmode"/>
+          </a>
+        </div><!-- END logo -->
+      </div><!-- END header__left -->
+      <div class="header__right">
+        <span class="hamburger js-menu-toggle">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </span>
+        <ul class="nav">
+          <li class="nav__el">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__el">
+            <a href="#" class="nav__link">Roms</a>
+          </li>
+          <li class="nav__el">
+            <a href="#" class="nav__link">Emulators</a>
+          </li>
+        </ul><!-- END nav -->
+      </div><!-- END header__right -->
+    </div><!-- END header__wrap -->
+  </header><!-- END header -->
+  
   <div class="mobile-menu">
     <ul class="mobile-menu__list">
       <li class="mobile-menu__el">
@@ -24,61 +54,28 @@
       </li>
     </ul>
   </div><!-- END mobile-menu -->
-  <header class="header is-main" id="header">
-    <div class="container">
-      <div class="header__wrap">
-        <div class="header__top">
-          <div class="header__left">
-            <div class="logo">
-              <a href="main_page.html" class="logo__link" title="romsmode">
-                <img src="img/logo.png" alt="romsmode"/>
-              </a>
-            </div>
-          </div>
-          <div class="header__right">
-            <span class="hamburger js-menu-toggle">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </span>
-            <ul class="nav">
-              <li class="nav__el">
-                <a href="#" class="nav__link">Home</a>
-              </li>
-              <li class="nav__el">
-                <a href="#" class="nav__link">Roms</a>
-              </li>
-              <li class="nav__el">
-                <a href="#" class="nav__link">Emulators</a>
-              </li>
-            </ul>
-          </div><!-- END header__right -->
-        </div><!-- end END header__top -->
-        <div class="header__bottom">
-          <div class="main-banner">
-            <h1 class="main-banner__title">
-              Play Video Game Roms
-              <span>on your Computer or Phone</span>
-            </h1>
-            <div class="search">
-              <div class="search__field">
-                <input type="search"
-                       class="input js-input is-big"
-                       placeholder="What do you want to play today?"/>
-              </div>
-              <div class="search__action">
-                <button class="btn is-search">
-                  <i class="ico is-search"></i>
-                  <span>Search</span>
-                </button>
-              </div>
-            </div><!-- END search -->
-          </div><!-- end main-banner -->
-        </div><!-- end header__bottom -->
-      </div><!-- end header__wrap -->
-    </div><!-- end container -->
-  </header><!-- end header -->
   <main class="main">
+    <div class="hero">
+      <div class="hero__banner">
+        <h1 class="hero__title">
+          Play Video Game Roms
+          <span>on your Computer or Phone</span>
+        </h1>
+        <div class="search">
+          <div class="search__field">
+            <input type="search"
+                   class="input js-input is-big"
+                   placeholder="What do you want to play today?"/>
+          </div>
+          <div class="search__action">
+            <button class="btn is-search">
+              <i class="ico is-search"></i>
+              <span>Search</span>
+            </button>
+          </div>
+        </div><!-- END search -->
+      </div><!-- end hero-banner -->
+    </div><!-- END hero -->
     <section class="content is-main">
       <div class="consoles">
         <div class="container">
@@ -430,6 +427,6 @@
       </div><!-- end footer__wrap -->
     </div><!-- end container -->
   </footer><!-- end footer -->
+
 </body>
-</html>
 
