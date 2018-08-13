@@ -1,6 +1,6 @@
 Structure
 =============
-[**DEMO**](https://kvitkamargaritka.github.io/trainersmode/)
+[**DEMO**](https://makecode.github.io/romsmode/)
 
 `/src/` - thats where you write code.
 
