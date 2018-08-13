@@ -1,0 +1,42 @@
+.more
+  max-width: 300px
+  position: relative
+
+  &__title
+    margin-bottom: 10px
+    font-size: 13px
+    text-transform: uppercase
+    +h300
+
+  &__link
+    color: $textBlack
+    display: flex
+    flex-direction: column
+    margin-bottom: 10px
+    line-height: 1.2
+
+    &:active,
+    &:hover
+      color: $textBlack
+
+  &__table
+    line-height: 1.6
+
+    td
+      margin-bottom: 5px
+      +h300
+      &:first-child
+        width: 81%
+
+      &:last-child
+        font-size: 12px
+
+  &__download
+    +h400
+
+  &__subscr
+    font-size: 12px
+    +h300
+
+  +m(768)
+    display: none

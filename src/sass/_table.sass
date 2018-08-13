@@ -1,0 +1,105 @@
+.table
+  width: 100%
+  background-color: #fff
+  border: 1px solid #e8ebed
+  font-size: 14px
+
+  th
+    background-color: #edeff0
+    text-transform: uppercase
+    +h700
+
+    &:first-child
+      text-align: left
+      padding-left: 15px
+
+    +m(768)
+      &:nth-child(2),
+      &:nth-child(3)
+        display: none
+
+  tr
+    height: 40px
+    line-height: 40px
+
+    &:nth-child(even)
+      background-color: #f5f6f7
+
+  td
+    text-align: center
+    padding: 0
+
+    &:first-child
+      position: relative
+      width: 70%
+      padding-left: 15px
+      text-align: left
+
+    &:nth-child(2)
+      width: 14%
+
+    &:nth-child(3)
+      width: 16%
+
+    a
+      &:hover
+        color: #4875e8
+
+    +m(768)
+      &:nth-child(2),
+      &:nth-child(3)
+        display: none
+
+  &.with-flag
+
+    td
+      &:first-child
+        padding-left: 40px
+
+  &.is-large
+
+    td
+      &:first-child
+        width: 60%
+      &:nth-child(2)
+        width: 12%
+      &:nth-child(3)
+        width: 14%
+      &:last-child
+        width: 14%
+
+  &.is-small
+    border: none
+    width: 50%
+    +m(768)
+      width: 100%
+
+    tr
+      height: 30px
+      line-height: 30px
+
+      &:nth-child(odd)
+        background-color: #f5f6f7
+
+      &:nth-child(even)
+        background-color: #ffffff
+
+    td
+      position: relative
+      &:first-child
+        width: 95%
+        padding-left: 0
+      &:last-child
+        width: 5%
+
+      .ico-flag
+        top: 50%
+        transform: translateY(-50%)
+        left: auto
+        right: 10px
+
+    a
+      color: $textBlack
+
+      &:hover
+        color: $linkBlue

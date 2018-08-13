@@ -1,0 +1,120 @@
+.ico
+  position: relative
+  display: inline-flex
+  vertical-align: middle
+  background: top left no-repeat
+
+  &.is-search
+    background-image: url(../img/ico-search.png)
+    width: 15px
+    height: 14px
+
+  &.is-arrow-left
+    width: 12px
+    height: 8px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      width: 1px
+      height: 5px
+      background-color: $textBlack
+
+    &:after
+      left: 0
+      top: 0
+      transform: rotate(45deg)
+
+    &:before
+      left: 0
+      bottom: 0
+      transform: rotate(-45deg)
+
+  &.is-arrow-right
+    width: 12px
+    height: 8px
+    &:after,
+    &:before
+      position: absolute
+      content: ''
+      width: 1px
+      height: 5px
+      background-color: $textBlack
+
+    &:after
+      right: 0
+      top: 0
+      transform: rotate(-45deg)
+
+    &:before
+      right: 0
+      bottom: 0
+      transform: rotate(45deg)
+
+  &.is-triangle-down
+    width: 8px
+    height: 4px
+    &:after
+      position: absolute
+      top: 0
+      content: ''
+      left: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 4px 4px 0 4px
+      border-color: #fff transparent transparent transparent
+      transition: all .3s ease-in-out
+
+  &.is-triangle-down-black
+    width: 8px
+    height: 4px
+    &:after
+      position: absolute
+      top: 0
+      content: ''
+      left: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 4px 4px 0 4px
+      border-color: #000 transparent transparent transparent
+      transition: all .3s ease-in-out
+
+  &.is-arrow-down
+    width: 28px
+    height: 28px
+    background-image: url(../img/ico_arrow_down.png)
+
+.ico-flag
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 15px
+  width: 17px
+  height: 16px
+  background: url(../img/sprite.png) no-repeat
+
+  &.is-usa
+    background-position: right bottom
+
+  &.is-jp
+    background-position: 0 0
+
+  &.is-va
+    background-position: -19px 0px
+
+  &.is-fi
+    background-position: -36px 0px
+
+  &.is-kr
+    background-position: -55px 0px
+
+  &.is-dk
+    background-position: 0 -19px
+
+  &.is-eu
+    background-position: -19px -19px
+
+  &.is-lu
+    background-position: -55px -19px

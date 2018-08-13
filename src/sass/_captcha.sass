@@ -1,0 +1,81 @@
+.captcha
+  display: flex
+  flex-direction: column
+
+  &__verify
+    margin-bottom: 15px
+
+  &__title
+    display: inline-block
+    font-size: 14px
+    margin-bottom: 17px
+    text-transform: uppercase
+    +h700
+
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    position: relative
+
+    +m(768)
+      justify-content: flex-start
+
+  &__input
+    margin: 0 14px
+    padding: 0 10px
+    width: 128px
+    height: 38px
+    line-height: 38px
+    border: 1px solid #e0e0e0
+    box-sizing: border-box
+
+  &__el
+    display: flex
+    align-items: center
+
+    +m(480)
+      margin-bottom: 10px
+
+  &__link
+    line-height: 0
+
+  &__img
+    max-width: none
+
+  &__btn
+    text-align: center
+    display: inline-block
+    padding: 0 37px
+    height: 38px
+    line-height: 38px
+    font-size: 16px
+    text-transform: uppercase
+    color: #fff
+    background-color: $linkBlue
+    border: 1px solid $linkBlue
+    white-space: nowrap
+    transition: all .3s ease-in-out
+    cursor: pointer
+    overflow: hidden
+    box-sizing: border-box
+
+    &:hover
+      background-color: #57a8ff
+      border-color: #57a8ff
+
+    +m(480)
+      width: 139px
+      padding: 0
+      font-size: 15px
+
+  &__error-text
+    position: absolute
+    top: -17px
+    font-size: 12px
+    color: #c00
+    +h700
+
+  .btn
+    +m(768)
+      width: 100%

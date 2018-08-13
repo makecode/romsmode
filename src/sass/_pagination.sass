@@ -1,0 +1,33 @@
+.pagination
+  margin: 15px 0
+
+  &__list
+    display: inline-flex
+
+  &__el
+    margin: 0 2px
+
+    &.is-active,
+    &:hover
+      a
+        color: #fff
+        background-color: #548af0
+        border-color: #548af0
+      i
+        &:after,
+        &:before
+          background-color: #fff
+
+  &__link
+    position: relative
+    display: flex
+    align-items: center
+    padding: 0 10px
+    margin: 0
+    height: 30px
+    line-height: 27px
+    color: #333
+    border: 1px solid #ddd
+    border-radius: 4px
+    cursor: pointer
+    box-sizing: border-box

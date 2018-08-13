@@ -1,0 +1,57 @@
+.product
+  margin-top: 30px
+  margin-bottom: 35px
+  display: flex
+  flex-direction: row
+
+  +m(768)
+    margin-top: 15px
+    flex-direction: column
+
+  &__left
+    margin-right: 60px
+    +m(768)
+      margin-right: 0
+      margin-bottom: 30px
+
+  &__right
+    width: 415px
+    +m(768)
+      width: 100%
+
+  &__img-box
+    width: 250px
+    // +m(768)
+    //   width: auto
+
+  &__table
+    position: relative
+    margin-bottom: 30px
+    vertical-align: top
+    font-size: 13px
+
+    tr
+      border-bottom: 1px solid #ececec
+
+      &:last-child
+        border-bottom: none
+
+    td
+      position: relative
+      padding: 5px 0
+
+      &:first-child
+        width: 120px
+        text-transform: uppercase
+        +h300
+
+      &:last-child
+        color: #4e4e4e
+
+      a
+        color: #4e4e4e
+        &:hover
+          text-decoration: underline
+
+      .ico-flag
+        left: 0

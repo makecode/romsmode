@@ -1,0 +1,48 @@
+.nav
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+
+  &__el
+    padding-right: 37px
+    &:last-child
+      padding-right: 0
+
+  &__link
+    font-size: 16px
+    color: #fff
+    text-transform: uppercase
+
+    &:hover
+      color: #4875e8
+
+  &.is-footer
+
+    .nav
+
+      &__el
+        position: relative
+        padding-right: 20px
+
+        &:last-child
+          padding-right: 0
+
+          &:after
+            display: none
+
+        &:after
+          position: absolute
+          content: ''
+          right: 9px
+          top: 4px
+          background-color: #343434
+          width: 1px
+          height: 13px
+
+      &__link
+        color: #343434
+        text-transform: capitalize
+
+        &:hover
+          color: #808080

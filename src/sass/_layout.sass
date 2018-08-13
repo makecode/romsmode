@@ -1,0 +1,84 @@
+.container
+  position: relative
+  margin: 0 auto
+  width: 1110px
+  overflow: hidden
+
+  +m(1200)
+    width: 980px
+
+  +m(1024)
+    width: 760px
+    padding: 0 20px
+
+  +m(768)
+    width: 100%
+
+.main
+  flex: 1 1 auto
+
+.header
+  min-height: 80px
+  position: relative
+  background: url('../img/main-bg.png') top no-repeat
+  background-size: cover
+
+  &.is-main
+    min-height: 500px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    +m(768)
+      .logo
+        display: none
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 6
+        text-align: center
+
+  &__top
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 80px
+
+    +m(768)
+      height: 60px
+
+    .logo
+      display: inline-block
+      line-height: 0
+
+  &__bottom
+    padding-top: 80px
+    padding-bottom: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    +m(768)
+      padding-top: 30px
+      padding-bottom: 30px
+
+  .nav
+    +m(768)
+      display: none
+
+.footer
+  padding: 40px 0
+  background-color: #eceff1
+  border-top: 1px solid $borderGrey
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    +m(768)
+      flex-direction: column

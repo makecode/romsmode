@@ -1,0 +1,108 @@
+//variables
+$textBlack: #343434
+$linkBlue: #1e88e5
+$borderGrey: #eeeeee
+
+=h300
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  font-weight: 300
+
+=h400
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  font-weight: 400
+
+=h700
+  font-family: 'Lato', Helvetica, Arial, sans-serif
+  font-weight: 700
+
+body
+  display: flex
+  flex-direction: column
+  font-size: 14px
+  color: $textBlack
+  +h400
+
+h1
+  font-size: 54px
+  +h700
+
+  &.is-fz-34
+    font-size: 34px
+
+  &.is-fz-28
+    font-size: 28px
+
+  &.is-fz-26
+    font-size: 26px
+
+  +m(1024)
+    font-size: 40px
+
+  +m(768)
+    font-size: 23px
+
+  +m(480)
+    font-size: 21px
+
+h2
+  font-size: 26px
+  text-transform: uppercase
+  +h700
+
+  &.is-fz-20
+    font-size: 20px
+
+  &.is-fz-16
+    font-size: 16px
+
+a
+  color: $linkBlue
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+  &:active,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+
+input[type='text'],
+input[type='search'],
+input[type='button']
+  -moz-appearance: none
+  -webkit-appearance: none
+
+// common blocks
+.main
+  flex: 1 1 auto
+
+.i-upper
+  text-transform: uppercase
+
+.i-bold
+  +h700
+
+.sorter
+  margin-left: 7px
+  position: relative
+  cursor: pointer
+
+.banner
+  margin: 20px 0
+
+  &__name
+    font-size: 13px
+    +h700
+
+.player
+  margin-top: 20px
+
+.logo-game
+  +m(768)
+    display: none
