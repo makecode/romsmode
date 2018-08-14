@@ -13,7 +13,6 @@ $(document).ready(function() {
       });
     }());
 
-
     (function dropDowns() {
       $('.js-dropdown-more').click(function(){
         $(this).parent().find('.dropdown ').toggleClass('is-visible');
@@ -37,7 +36,6 @@ $(document).ready(function() {
           if (value) {
             window.location = 'search/' + value;
           }
-
           return false;
         }
       });
