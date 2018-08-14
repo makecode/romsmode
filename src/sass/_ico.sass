@@ -86,6 +86,37 @@
     height: 28px
     background-image: url(../img/ico_arrow_down.png)
 
+  &.is-fb,
+  &.is-tw,
+  &.is-gp
+    width: 94px
+    height: 44px
+    transition: all .3s ease-in-out
+
+  &.is-fb
+    background: url("../img/ico-fb.png") no-repeat
+    background-color: #5d74ca
+    background-position: center
+
+    &:hover
+      background-color: #6880d9
+
+  &.is-tw
+    background: url("../img/ico-tw.png") no-repeat
+    background-color: #56b1e8
+    background-position: center
+
+    &:hover
+      background-color: #60c0f7
+
+  &.is-gp
+    background: url("../img/ico-gp.png") no-repeat
+    background-color: #f86153
+    background-position: center
+
+    &:hover
+      background-color: #ff6e61
+
 .ico-flag
   position: absolute
   top: 50%

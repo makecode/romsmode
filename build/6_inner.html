@@ -21,11 +21,25 @@
         <div class="popup__text">
           <p>Social media share buttons are a bit of an expected feature on today's websites.</p>
         </div>
-        <ul class="social">
-          <li class="social__el">
-            <a href="#" class="social__link"></a>
-          </li>
-        </ul>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__el">
+              <a href="#" target="_blank" class="social__link">
+                <i class="ico is-fb"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a href="#" target="_blank" class="social__link">
+                <i class="ico is-tw"></i>
+              </a>
+            </li>
+            <li class="social__el">
+              <a href="#" target="_blank" class="social__link">
+                <i class="ico is-gp"></i>
+              </a>
+            </li>
+          </ul>
+        </div><!-- end social -->
       </div>
     </div>
   </div>
@@ -52,11 +66,24 @@
         </div><!-- END logo -->
       </div><!-- END header__left -->
       <div class="header__right">
-        <span class="hamburger js-menu-toggle">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </span>
+        <div class="hamburger" id="js-menu-toggle">
+          <span class="hamburger__el"></span>
+          <span class="hamburger__el"></span>
+          <span class="hamburger__el"></span>
+        </div>
+        <div class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__el">
+              <a href="#" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__el">
+              <a href="#" class="mobile-menu__link">Roms</a>
+            </li>
+            <li class="mobile-menu__el">
+              <a href="#" class="mobile-menu__link">Emulators</a>
+            </li>
+          </ul>
+        </div><!-- END mobile-menu -->
         <ul class="nav">
           <li class="nav__el">
             <a href="#" class="nav__link">Home</a>
@@ -174,5 +201,48 @@
   </footer><!-- end footer -->
 
 <!-- END out -->
+
+  <!--<script>-->
+    <!--window.mousemove = function (e) {-->
+      <!--var x = e.pageX,-->
+          <!--y = e.pageY;-->
+      <!--e.pageX = e.clientX + (html && html.scrollLeft || body && body.scrollLeft || 0)-->
+    <!--};-->
+
+    <!--var popup = function(){-->
+
+      <!--$('#popup').hide();-->
+
+    <!--};-->
+    <!--$('body').mousemove(function(){-->
+
+      <!--elem.innerHTML = event.clientX + ' : ' + event.clientY;-->
+
+      <!--if(prevY === null){-->
+
+      <!--}-->
+
+      <!--$('#popup').show();-->
+      <!--timeOut = setTimeout(popup, 10000);-->
+    <!--});-->
+    <!---->
+<!--//    var timeOut = setTimeout(showDiv, 3000);-->
+<!--//    var _delay = setInterval(delayCheck, 1000);-->
+<!--//    $(document).on('mousemove','.parent',function(e){-->
+<!--//      $("popup").text(event.pageX + ", " + event.pageY);-->
+<!--//      clearInterval(_delay);-->
+<!--////      $('.hide').fadeIn();-->
+<!--////      timedelay = 1;-->
+<!--////      _delay = setInterval(delayCheck, 1000);-->
+<!--//    });-->
+<!--//-->
+<!--//    function delayCheck() {-->
+<!--//      if (timedelay == 3) {-->
+<!--//        $('.hide').fadeOut();-->
+<!--//        timedelay = 1;-->
+<!--//      }-->
+<!--//      timedelay = timedelay + 1;-->
+<!--//    }-->
+  <!--</script>-->
 </body>
 </html>

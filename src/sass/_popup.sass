@@ -1,6 +1,6 @@
 .popup-overlay
   position: fixed
-  display: none
+  display: block
   background-color: #0f0f0f
   opacity: 0.8
   top: 0
@@ -11,7 +11,7 @@
 
 .popup
   position: absolute
-  display: none
+  display: block
   left: 50%
   top: 50%
   transform: translate(-50%, -50%)
@@ -44,19 +44,21 @@
     +h400
 
   &__text
+    padding-top: 30px
     font-size: 24px
     +h300
 
   &__content
     position: relative
-    padding-left: 150px
+    padding-left: 190px
+    padding-right: 40px
     height: calc(100% - 80px)
 
     &::before
       position: absolute
       content: ''
       height: 100%
-      width: 150px
+      width: 170px
       top: 50%
       left: 0
       transform: translateY(-50%)

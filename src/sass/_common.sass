@@ -26,8 +26,20 @@ h1
   font-size: 54px
   +h700
 
+  +m(1024)
+    font-size: 40px
+
+  +m(768)
+    font-size: 35px
+
+  +m(480)
+    font-size: 25px
+
   &.is-fz-34
     font-size: 34px
+
+    +m(768)
+      font-size: 30px
 
   &.is-fz-28
     font-size: 28px
@@ -35,19 +47,13 @@ h1
   &.is-fz-26
     font-size: 26px
 
-  +m(1024)
-    font-size: 40px
-
-  +m(768)
-    font-size: 23px
-
-  +m(480)
-    font-size: 21px
-
 h2
   font-size: 26px
   text-transform: uppercase
   +h700
+
+  +m(768)
+    font-size: 23px
 
   &.is-fz-20
     font-size: 20px
@@ -114,6 +120,8 @@ input[type='button']
   padding-top: 80px
   min-height: 500px
   background: url('../img/main-bg.png') top no-repeat
+  +m(768)
+    padding-top: 40px
 
   &__banner
     width: 100%
@@ -132,3 +140,18 @@ input[type='button']
 
       +m(768)
         font-size: 20px
+
+.social
+  margin-top: 40px
+
+  &__list
+    display: flex
+
+  &__el
+    margin-right: 14px
+
+    &:last-child
+      margin-right: 0
+
+.item
+  width: 300px
