@@ -32,8 +32,8 @@
       </div>
     </div>
   </div>
-  //=include partials/mobile-menu.html
   //=include partials/header.html
+  //=include partials/mobile-menu.html
   <main class="main">
     <div class="breadcrumbs">
       <div class="container">
@@ -51,10 +51,12 @@
       </div>
     </div><!-- END breadcrumbs -->
     <section class="content is-inner-6">
-      <div class="wait">
-        <h1 class="wait__title">Your ROM is Downloading...</h1>
-        <p class="wait__text">Your download will start in 5 second. Please Run/Keep the file when it's finished downloading.</p>
-        <p class="wait__text">Problems with the download? Please, <a class="wait__link" href="#">click here</a>.</p>
+      <div class="container">
+        <div class="wait">
+          <h1 class="wait__title">Your ROM is Downloading...</h1>
+          <p class="wait__text">Your download will start in 5 second. Please Run/Keep the file when it's finished downloading.</p>
+          <p class="wait__text">Problems with the download? Please, <a class="wait__link" href="#">click here</a>.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -63,47 +65,20 @@
 
 <!-- END out -->
 
-  <!--<script>-->
-    <!--window.mousemove = function (e) {-->
-      <!--var x = e.pageX,-->
-          <!--y = e.pageY;-->
-      <!--e.pageX = e.clientX + (html && html.scrollLeft || body && body.scrollLeft || 0)-->
-    <!--};-->
+  <script>
+    var timeout = null;
+    var popupShowed = false;
 
-    <!--var popup = function(){-->
+    document.addEventListener('mousemove', function (e) {
+      timeout = setTimeout(function () {
+        if (!popupShowed) {
+          $('#popup-overlay').show();
+          $('#popup').show();
 
-      <!--$('#popup').hide();-->
-
-    <!--};-->
-    <!--$('body').mousemove(function(){-->
-
-      <!--elem.innerHTML = event.clientX + ' : ' + event.clientY;-->
-
-      <!--if(prevY === null){-->
-
-      <!--}-->
-
-      <!--$('#popup').show();-->
-      <!--timeOut = setTimeout(popup, 10000);-->
-    <!--});-->
-    <!---->
-<!--//    var timeOut = setTimeout(showDiv, 3000);-->
-<!--//    var _delay = setInterval(delayCheck, 1000);-->
-<!--//    $(document).on('mousemove','.parent',function(e){-->
-<!--//      $("popup").text(event.pageX + ", " + event.pageY);-->
-<!--//      clearInterval(_delay);-->
-<!--////      $('.hide').fadeIn();-->
-<!--////      timedelay = 1;-->
-<!--////      _delay = setInterval(delayCheck, 1000);-->
-<!--//    });-->
-<!--//-->
-<!--//    function delayCheck() {-->
-<!--//      if (timedelay == 3) {-->
-<!--//        $('.hide').fadeOut();-->
-<!--//        timedelay = 1;-->
-<!--//      }-->
-<!--//      timedelay = timedelay + 1;-->
-<!--//    }-->
-  <!--</script>-->
+          popupShowed = true;
+        }
+      }, 2000);
+    })
+  </script>
 </body>
 </html>

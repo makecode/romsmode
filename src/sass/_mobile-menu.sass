@@ -21,7 +21,7 @@
     transform-origin: left top
 
     &:nth-child(1)
-      top: -2px
+      top: -1px
 
     &:nth-child(2)
       top: 50%
@@ -34,10 +34,10 @@
   &.open
 
     .hamburger__el
-      transform: rotate(220deg)
       left: 4px
 
       &:nth-child(1)
+        top: -2px
         transform: rotate(45deg)
 
       &:nth-child(2)
@@ -48,19 +48,21 @@
 
 
 .mobile-menu
-  padding: 10px 0
-  position: fixed
-  top: 0
-  right: 0
+  position: absolute
+  height: 160px
   width: 100%
-  z-index: 10
-  transition: all .3s ease
+  transition: all .3s ease-in-out
   transform: translateY(-100%)
-  border-bottom: 1px solid #2572c1
   background-color: #024ba0
+  visibility: hidden
+  z-index: 10
+  border-bottom: 1px solid transparent
+  box-sizing: border-box
 
   &.is-open
+    visibility: visible
     transform: translateY(80px)
+    border-bottom-color: #2572c1
 
   &__top
     padding: 22px 15px
@@ -76,9 +78,9 @@
     width: 100%
     text-align: center
 
-    //&:last-child
-    //  .mobile-menu__link
-    //    border-bottom: none
+    &:last-child
+      .mobile-menu__link
+        border-bottom: none
 
   &__link
     display: block

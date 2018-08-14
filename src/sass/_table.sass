@@ -3,6 +3,8 @@
   background-color: #fff
   border: 1px solid #e8ebed
   font-size: 14px
+  table-layout: fixed
+  overflow: scroll
 
   th
     background-color: #edeff0
@@ -58,11 +60,14 @@
       &:nth-child(4)
         display: none
 
-  &.with-flag
+  .link
+    display: block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
 
-    td
-      &:first-child
-        padding-left: 40px
+    &.with-flag
+      padding-left: 25px
 
   &.is-large
 

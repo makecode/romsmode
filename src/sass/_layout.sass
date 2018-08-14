@@ -19,7 +19,7 @@
 
 .header
   position: relative
-  height: 80px
+  //height: 80px
   background-color: #024ba0
   background-size: cover
   z-index: 15
@@ -31,6 +31,7 @@
     justify-content: space-between
     align-items: center
     z-index: 11
+    height: 80px
 
   .logo
     display: inline-block
@@ -44,6 +45,9 @@
   padding: 40px 0
   background-color: #eceff1
   border-top: 1px solid $borderGrey
+
+  +m(480)
+    padding: 20px 0
 
   &__wrap
     display: flex
