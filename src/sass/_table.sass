@@ -12,6 +12,7 @@
     +h700
 
     &:first-child
+      width: 70%
       text-align: left
       padding-left: 15px
 
@@ -60,16 +61,13 @@
       &:nth-child(4)
         display: none
 
-  .link
-    display: block
-    overflow: hidden
-    white-space: nowrap
-    text-overflow: ellipsis
-
-    &.with-flag
-      padding-left: 25px
-
   &.is-large
+
+    th
+      &:first-child
+        width: 60%
+        +m(1200)
+          width: 50%
 
     td
       &:first-child
@@ -81,6 +79,7 @@
       &:last-child
         width: 14%
     +m(1200)
+
       td
         &:first-child
           width: 50%
@@ -121,14 +120,18 @@
     &:last-child
       width: 10%
 
-    .ico-flag
-      top: 50%
-      transform: translateY(-50%)
-      left: auto
-      right: 10px
-
   a
     color: $textBlack
 
     &:hover
       color: $linkBlue
+
+.table-text-container
+  display: block
+
+  .link
+    margin-left: 25px
+    display: block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis

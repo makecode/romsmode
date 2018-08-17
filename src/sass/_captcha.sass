@@ -21,28 +21,26 @@
       justify-content: flex-start
 
   &__input
-    margin: 0 14px
+    margin: 0 10px 10px
     padding: 0 10px
     width: 128px
     height: 38px
     line-height: 38px
     border: 1px solid #e0e0e0
     box-sizing: border-box
-    +m(1200)
-      margin: 0 10px
 
   &__el
+    width: 100%
     display: flex
-    align-items: center
+    align-items: flex-start
+    justify-content: space-between
 
-    +m(1200)
-      margin-bottom: 10px
+    +m(768)
+      justify-content: flex-start
 
-    +m(1024)
-      margin-bottom: 0
+    +m(500)
+      flex-wrap: wrap
 
-    +m(444)
-      margin-bottom: 10px
 
   &__link
     line-height: 0
@@ -70,6 +68,9 @@
     &:hover
       background-color: #57a8ff
       border-color: #57a8ff
+
+    +m(500)
+      display: block
 
   &__error-text
     position: absolute
