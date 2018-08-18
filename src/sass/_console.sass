@@ -6,7 +6,8 @@
   height: 160px
   display: flex
   flex-direction: column
-  border: 1px solid $borderGrey
+  color: $textBlack
+  //border: 1px solid $borderGrey
   cursor: pointer
   box-sizing: border-box
 
@@ -29,6 +30,9 @@
     justify-content: center
     align-items: center
     height: calc(100% - 40px)
+    border: 1px solid $borderGrey
+    border-bottom: none
+    transition: all .3s ease-in-out
 
   &__bottom
     position: absolute
@@ -39,11 +43,16 @@
     background-color: #f7f7f7
     text-align: center
     transition: all .3s ease-in-out
+    border: 1px solid $borderGrey
+    border-top: none
     +h700
 
   &:hover
-    border-color: $linkBlue
+
+    .console__top
+      border-color: $linkBlue
 
     .console__bottom
       color: #ffffff
+      border-color: $linkBlue
       background-color: $linkBlue
