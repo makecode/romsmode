@@ -326,7 +326,7 @@ input[type='text'], input[type='search'], input[type='button'] { border-radius: 
 .product__table td:last-child { color: #4e4e4e; }
 .product__table td a { color: #4e4e4e; }
 .product__table td a:hover { text-decoration: underline; }
-.product__table td .ico-flag { left: 0; }
+.product__table td .ico-flag { top: 14px; left: 0; }
 
 .ico { position: relative; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; vertical-align: middle; background: top left no-repeat; }
 .ico.is-search { background-image: url(../img/ico-search.png); width: 15px; height: 14px; }
@@ -351,7 +351,7 @@ input[type='text'], input[type='search'], input[type='button'] { border-radius: 
 .ico.is-gp { background: url("../img/ico-gp.png") no-repeat; background-color: #f86153; background-position: center; }
 .ico.is-gp:hover { background-color: #ff6e61; }
 
-.ico-flag { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); -ms-transform: translateY(-50%); left: 15px; width: 17px; height: 16px; background: url(../img/sprite.png) no-repeat; }
+.ico-flag { position: absolute; top: 8px; left: 15px; width: 17px; height: 16px; background: url(../img/sprite.png) no-repeat; }
 .ico-flag.is-usa { background-position: right bottom; }
 .ico-flag.is-jp { background-position: 0 0; }
 .ico-flag.is-va { background-position: -19px 0px; }
