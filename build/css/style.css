@@ -165,10 +165,9 @@ input[type='text'], input[type='search'], input[type='button'] { border-radius: 
 
 .btn { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 0 10px; margin: 0; height: 30px; line-height: 27px; color: #343434; border: 1px solid #dddddd; background: transparent; cursor: pointer; box-sizing: border-box; font-family: "Lato", Helvetica, Arial, sans-serif; font-weight: 700; }
 .btn:active, .btn:hover, .btn:focus, .btn:visited { color: #343434; outline: none; }
-.btn.is-search { display: inline-block; height: 58px; width: 180px; text-transform: uppercase; font-size: 16px; border: none; background-color: #fffb04; background-image: -webkit-gradient(linear, left top, left bottom, from(#fffb04), to(#ffd228)); background-image: linear-gradient(#fffb04, #ffd228); }
+.btn.is-search { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: 58px; width: 180px; text-transform: uppercase; font-size: 16px; border: none; background-color: #fffb04; background-image: -webkit-gradient(linear, left top, left bottom, from(#fffb04), to(#ffd228)); background-image: linear-gradient(#fffb04, #ffd228); }
 .btn.is-search:hover { background-color: #ffd228; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd228), to(#ffea00)); background-image: linear-gradient(#ffd228, #ffea00); }
-.btn.is-search span { position: relative; }
-.btn.is-search span i { position: absolute; top: 3px; left: -23px; }
+.btn.is-search i { position: relative; margin-right: 6px; }
 .btn.is-search.is-mobile { padding: 0; width: 100%; height: 42px; border-radius: 4px; font-size: 15px; }
 .btn.is-blue { height: 32px; line-height: 32px; background-color: #548af0; border-color: #548af0; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-size: 14px; text-transform: capitalize; }
 .btn.is-blue:hover { background-color: #1252cc; }
@@ -326,7 +325,7 @@ input[type='text'], input[type='search'], input[type='button'] { border-radius: 
 .product__table td:last-child { color: #4e4e4e; }
 .product__table td a { color: #4e4e4e; }
 .product__table td a:hover { text-decoration: underline; }
-.product__table td .ico-flag { top: 14px; left: 0; }
+.product__table td .ico-flag { top: 6px; left: 0; }
 
 .ico { position: relative; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; vertical-align: middle; background: top left no-repeat; }
 .ico.is-search { background-image: url(../img/ico-search.png); width: 15px; height: 14px; }
