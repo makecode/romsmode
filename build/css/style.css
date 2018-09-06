@@ -182,6 +182,8 @@ input[type='text'], input[type='search'], input[type='button'] { border-radius: 
 .content { padding-top: 35px; padding-bottom: 60px; }
 .content.is-inner-1 h1 { margin-bottom: 20px; }
 .content.is-inner-2 .content__wrap, .content.is-inner-2_1 .content__wrap { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.content.is-inner-2 .ico-flag, .content.is-inner-2_1 .ico-flag { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.content.is-inner-4 .ico-flag { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .content__title { margin-bottom: 18px; font-size: 26px; text-transform: uppercase; font-family: "Lato", Helvetica, Arial, sans-serif; font-weight: 700; }
 .content__title.is-fz-46 { font-size: 46px; }
 .content__subtitle { display: inline-block; margin-top: 10px; }
