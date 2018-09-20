@@ -21,11 +21,11 @@
     outline: none
 
   &.is-search
-    display: inline-flex
-    justify-content: center
-    align-items: center
-    height: 58px
+    display: inline-block
+    text-align: center
     width: 180px
+    height: 58px
+    padding: 0
     text-transform: uppercase
     font-size: 16px
     border: none
@@ -79,10 +79,10 @@
     line-height: 62px
     transition: all .3s ease-in-out
 
-    +m(480)
-      font-size: 20px
-      height: 50px
-      line-height: 50px
+    //+m(480)
+    //  font-size: 20px
+    //  height: 50px
+    //  line-height: 50px
 
     &:hover
       background-color: #fff000
