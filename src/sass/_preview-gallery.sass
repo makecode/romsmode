@@ -6,20 +6,23 @@
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    +m(1199)
-      justify-content: flex-start
-    +m(415)
-      justify-content: space-around
+    justify-content: flex-start
+
+    +m(768)
+      justify-content: center
 
   &__el
     margin-right: 20px
     margin-bottom: 20px
+    width: 100px
 
-    &:last-child
+    &:nth-child(6n)
       margin-right: 0
 
-    +m(415)
-      margin-right: 0
+    +m(768)
+      max-width: 20%
+      &:nth-child(6n)
+        margin-right: 20px
 
   &__link
     display: inline-block
