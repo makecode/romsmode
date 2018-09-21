@@ -570,6 +570,11 @@ input[type=search] { -webkit-appearance: none; }
  .footer { padding: 20px 0; }
 
  .wait__title { font-size: 25px; text-align: center; } }
+@media only screen and (max-width: 414px) {
+
+ .preview-gallery__el { margin-right: 15px; margin-bottom: 15px; }
+
+ .preview-gallery__el:nth-child(6n) { margin-right: 15px; } }
 @media only screen and (max-width: 320px) {
 
  .header .logo { width: 210px; }
